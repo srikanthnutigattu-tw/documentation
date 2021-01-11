@@ -104,11 +104,15 @@ You need to subscribe the Datadog Forwarder Lambda function to each of your func
 1. [Install the Datadog Forwarder if you haven't][2].
 2. [Subscribe the Datadog Forwarder to your function's log groups][6].
 
+### Unified Service Tagging
+
+Although it's optional, Datadog highly recommends tagging you serverless applications with the `env`, `service`, and `version` tags following the [unified service tagging documentation][7].
+
 ## Explore Datadog Serverless Monitoring
 
-After you have configured your function following the steps above, you should be able to view metrics, logs and traces on the [Serverless Homepage][7].
+After you have configured your function following the steps above, you should be able to view metrics, logs and traces on the [Serverless Homepage][8].
 
-### Monitor Custom Business Logic
+## Monitor Custom Business Logic
 
 If you would like to submit a custom metric or span, see the sample code below:
 
@@ -153,7 +157,7 @@ def some_operation()
 end
 ```
 
-For more information on custom metric submission, see [here][8]. For additional details on custom instrumentation, see the Datadog APM documentation for [custom instrumentation][9].
+For more information on custom metric submission, see [here][9]. For additional details on custom instrumentation, see the Datadog APM documentation for [custom instrumentation][10].
 
 ## Further Reading
 
@@ -168,3 +172,7 @@ For more information on custom metric submission, see [here][8]. For additional 
 [7]: https://app.datadoghq.com/functions
 [8]: /serverless/custom_metrics?tab=ruby
 [9]: /tracing/custom_instrumentation/ruby/
+[7]: /getting_started/tagging/unified_service_tagging/#aws-lambda-functions
+[8]: https://app.datadoghq.com/functions
+[9]: /serverless/custom_metrics?tab=ruby
+[10]: /tracing/custom_instrumentation/ruby/

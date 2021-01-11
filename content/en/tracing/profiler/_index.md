@@ -6,13 +6,20 @@ aliases:
 further_reading:
     - link: 'tracing/profiler/getting_started'
       tag: 'Documentation'
-      text: 'Enable continuous profiler for your application.'  
+      text: 'Enable continuous profiler for your application.'
+    - link: 'tracing/profiler/intro_to_profiling'
+      tag: 'Documentation'
+      text: 'Intro to profiling.'
     - link: 'tracing/profiler/search_profiles'
       tag: 'Documentation'
       text: 'Learn more about available profile types.'
     - link: 'https://www.datadoghq.com/blog/introducing-datadog-profiling/'
       tags: 'Blog'
       text: 'Introducing always-on production profiling in Datadog.'
+    - link: 'https://www.datadoghq.com/blog/datadog-github-action-vulnerability-analysis/'
+      tags: 'Blog'
+      text: 'Datadog GitHub Action for continuous vulnerability analysis.'
+
 ---
 
 {{< img src="tracing/profiling/profiling_flamegraph.gif" alt="Exploring profiling flame graph">}}
