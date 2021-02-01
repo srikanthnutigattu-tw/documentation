@@ -274,7 +274,7 @@ components:
     AWSTagFilterDeleteRequest:
       description: The objects used to delete an AWS tag filter entry.
       properties:
-        aws_account_identifier:
+        account_id:
           description: The unique identifier of your AWS account.
           example: FAKEAC0FAKEAC2FAKEAC
           type: string
@@ -5149,6 +5149,13 @@ components:
         query:
           description: The monitor query.
           type: string
+        restricted_roles:
+          description: A list of role identifiers that can be pulled from the Roles
+            API. Cannot be used with `locked` option.
+          items:
+            description: A role UUID.
+            type: string
+          type: array
         state:
           $ref: '#/components/schemas/MonitorState'
         tags:
